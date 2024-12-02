@@ -67,7 +67,7 @@ var markersData = [
         position: [42.34973907470703, -71.08280944824219],  
           title: "Amorino Gelato",
           popupContent: "<p><b>Amorino Gelato</b></p>"
-      },
+      };
 ];
 
 markersData.forEach(function(markerData) {
