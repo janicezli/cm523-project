@@ -2,7 +2,6 @@
 var map = L.map('map', {
     center: [42.3601, -71.0589],
     zoom: 10,
-});
  
 var tiles = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
