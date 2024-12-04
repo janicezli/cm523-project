@@ -16,7 +16,7 @@ var tiles = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 
 <!---marker.addTo(map).bindPopup("<p><b>Mike's Pastry</b></p>");
 
-var markersData = [
+const markersData = [
     {
         position: [42.3641884, -71.0542414],  
         title: "Mike's Pastry",
