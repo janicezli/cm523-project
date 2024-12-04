@@ -26,7 +26,7 @@ var markersData = [
       position: [42.3641597, -71.0544506],  
         title: "Caffe Vittoria",
         popupContent: "<p><b>Caffe Vittoria</b></p>"
-    }
+    },
     {
         position: [42.365187, -71.055601],  
           title: "Bova's Bakery",
