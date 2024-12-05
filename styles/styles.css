@@ -22,7 +22,7 @@ li {
 }
 
 li a:hover{
-  background: lightgray;
+  background: lightslategray;
 }
 
 a { text-decoration: none; }
