@@ -29,9 +29,7 @@ a { text-decoration: none; }
 
 #map { 
   height: 300px;
-}
-
-.leaflet-popup-content-wrapper {
   width: 100%;
 }
+
 
