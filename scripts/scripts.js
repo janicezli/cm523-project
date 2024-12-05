@@ -9,12 +9,6 @@ const tiles = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
     minZoom: 15  
 }).addTo(map);
 
-const marker = L.marker([42.3641884, -71.0542414], { 
-    draggable: true,
-    title: "Mike's Pastry",
-    opacity: 0.75
-});
-
 const markersData = [
     {
         position: [42.3641884, -71.0542414],  
@@ -69,7 +63,7 @@ const markersData = [
 
 
 markersData.forEach(function(markerData) {
-    var marker = L.marker(markerData.position, {
+    const marker = L.marker(markerData.position, {
         title: markerData.title,
         draggable: true,
         opacity: 0.75
