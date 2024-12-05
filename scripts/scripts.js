@@ -1,4 +1,3 @@
-/* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 const map = L.map('map', {
     center: [42.3601, -71.0589],
     zoom: 10,
