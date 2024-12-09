@@ -27,6 +27,13 @@ background: lightgray;
 
 a { text-decoration: none; }
 
+p:first-of-type {
+  font-size: 1.3em;
+  background: #D2E0EE;
+  padding: 20px;
+  width: 35em;
+}
+
 #map { 
 height: 300px;
 width: 100%;

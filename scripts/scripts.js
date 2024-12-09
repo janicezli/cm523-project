@@ -23,7 +23,7 @@ const baseMaps = {
       };
 
 const cakeLayer = L.layerGroup();
- const icecreamLayer = L.layerGroup();
+const icecreamLayer = L.layerGroup();
 const cookieLayer = L.layerGroup();
 const pieLayer = L.layerGroup();
 const breadLayer = L.layerGroup();
