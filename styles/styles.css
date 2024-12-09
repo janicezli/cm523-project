@@ -4,40 +4,43 @@
 /* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
 
 body {
-    background: #FFDDD8;
+  background: #FFDDD8;
+  margin: 20px;
 }
 
 ul{
-  list-style:none;
-  margin: 10px;
-  padding: 0;
-  display: flex;
+list-style:none;
+padding: 0;
+display: flex;
 }
 
 li {
-  background: #FFE6B0;
-  display: inline;
-  padding: 2em;
-  text-decoration: none;
+background: #FFE6B0;
+display: inline;
+padding: 2em;
+text-decoration: none;
 }
 
 li a:hover{
-  background: lightgray;
+background: lightgray;
 }
 
 a { text-decoration: none; }
 
 #map { 
-  height: 300px;
-  width: 100%;
-  min-height: 300px;
+height: 300px;
+width: 100%;
+min-height: 300px;
 }
 
 @media (max-width: 600px) {
-  ul {
-      flex-direction: column; /* 
-      align-items: center;
-
-  }
+ul {
+    flex-direction: column;
 }
- 
+}
+
+h2 {
+background-color: #D2E0EE; 
+padding: 10px;
+}
+
