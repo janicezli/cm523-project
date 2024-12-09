@@ -17,227 +17,734 @@
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
-    <!-- YOUR HTML GOES HERE -->
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
+  </script>
+</head>
+<body>
+  <!-- YOUR HTML GOES HERE -->
 
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-    <nav>
-      <ul>
-      <li><a href="#">Home</a></li> 
-      <li><a href="#">Map</a></li>
-      <li><a href="#">About</a></li>   
-      </ul>  
-      </nav>
-          
-      <div id="map"></div>
+  <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="index.html">Map</a></li>
+    <li><a href="About.html">About</a></li>
+    </ul>  
+    </nav>
+        
+    <div id="map"></div>
+        
+        <h2>Mike's Pastry</h2>
+        <p>
+    An Italian bakery famous for its pastries like cannolis and lobster tails since 1946.
+        </p>
+        <p>
+          <strong>Address:</strong> 300 Hanover St, Boston, MA 02113
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 10PM everyday 
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, cookie 
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 742-3050
+        </p>
+    
+            <h2>Caffe Vittoria</h2>
+        <p>
+    Known as Boston's first Italian cafe renowned for their coffee and pastries.
+        </p>
+        <p>
+          <strong>Address:</strong> 290-296 Hanover St, Boston, MA 02113
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 12AM everyday 
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.3/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, cookie 
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 227-7606
+        </p> 
 
-      <h2>Filter</h2>
-<button type="button">Neighborhood</button>
-<button type="button">Type of dessert</button>
-<button type="button">Type of shop</button>
-<button type="button">Price</button>
-          
-          <h2>Mike's Pastry</h2>
-          <p>
-      An Italian bakery famous for its pastries like cannolis and lobster tails since 1946.
-          </p>
-          <p>
-            <strong>Address:</strong> 300 Hanover St, Boston, MA 02113
-          </p>
-          <p>
-           <strong>Hours:</strong> 8AM - 10PM everyday 
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.4/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> cake, cookie 
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 742-3050
-          </p>
-      
-              <h2>Caffe Vittoria</h2>
-          <p>
-      Known as Boston's first Italian cafe renowned for their coffee and pastries.
-          </p>
-          <p>
-            <strong>Address:</strong> 290-296 Hanover St, Boston, MA 02113
-          </p>
-          <p>
-           <strong>Hours:</strong> 8AM - 12AM everyday 
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.3/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> cake, cookie 
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 227-7606
-          </p> 
+        <h2>Bova's Bakery</h2>
+        <p>
+    A family-owned bakeshop, opened in 1932, offering up breads, cookies and sandwiches.
+        </p>
+        <p>
+          <strong>Address:</strong> 134 Salem St, Boston, MA 02113
+        </p>
+        <p>
+         <strong>Hours:</strong> Open 24 hours
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.7/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, pie, cookie 
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 523-5601
+        </p>
+        
+        <h2>Modern Pastry Shop</h2>
+        <p>
+    Pastries, cakes, pies & cookies fill the cases at this unassuming, family-run Italian bakery.
+        </p>
+        <p>
+          <strong>Address:</strong> 257 Hanover St, Boston, MA 02113
+        </p>
+        <p>
+         <strong>Hours:</strong> 7AM - 11PM Mon-Thurs, Sun; 7AM - 12AM Fri-Sat
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.5/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, pie, cookie 
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 523-3783
+        </p>
+        
+        <h2>Colette Bakery</h2>
+        <p>
+    Bakery turning out croissants, quiches, eclairs, and other French baked goods.
+        </p>
+        <p>
+          <strong>Address:</strong> 2517 Columbus Ave, Boston, MA 02118
+        </p>
+        <p>
+         <strong>Hours:</strong> Closed Mon-Tue; 7AM - 5PM Wed-Fri; 8AM - 4PM Sat-Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.7/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake, cookie 
+        </p>
+        <p>
+        <strong>Phone:</strong> (857) 449-6121
+        </p>
+        
+        <h2>Kane's Donuts</h2>
+        <p>
+    Modest bakery making 40+ kinds of donuts, such as crème brûlée & red velvet, with gf options.
+        </p>
+        <p>
+          <strong>Address:</strong> 90 Oliver St, Boston, MA 02110
+        </p>
+        <p>
+         <strong>Hours:</strong> 7AM - 2:30PM everyday 
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.6/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> donut
+        </p>
+        <p>
+        <strong>Phone:</strong> (857) 317-2654
+        </p>
+        
+        <h2>Levain Bakery</h2>
+        <p>
+    Bakery known for freshly baked chocolate chip cookies, including gluten-free versions.
+        </p>
+        <p>
+          <strong>Address:</strong> 180 Newbury St, Boston, MA 02116
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 10PM everyday 
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 390-7799
+        </p>
+        
+        <h2>Jonquils Cafe and Bakery</h2>
+        <p>
+    Playful patisserie in a stylish space offering specialty coffees & teas, plus cakes & snacks.
+        </p>
+        <p>
+          <strong>Address:</strong> 125 Newbury St, Boston, MA 02116
+        </p>
+        <p>
+         <strong>Hours:</strong> 9AM - 6PM everyday 
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.6/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 982-6117
+        </p>
+        
+        <h2>Sweet Waffles + Boba</h2>
+        <p>
+    Laid-back cafe specializing in Belgian waffles on a stick & bubble tea drinks in creative flavors.
+        </p>
+        <p>
+          <strong>Address:</strong> 18 Hudson St, Boston, MA 02111
+        </p>
+        <p>
+         <strong>Hours:</strong> Closed Mon-Thurs; 12PM - 8PM Fri-Sun 
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.8/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> waffle
+        </p>
+        <p>
+        <strong>Phone:</strong> (857) 203-0480
+        </p>
+        
+        <h2>Amorino Gelato</h2>
+        <p>
+    Italian ice cream shop serving gelati and sorbet in the shape of flowers, plus macarons.
+        </p>
+        <p>
+          <strong>Address:</strong> 249 Newbury St, Boston, MA 02116
+        </p>
+        <p>
+         <strong>Hours:</strong> 1PM - 11PM Mon-Thurs; 1PM - 11:30PM Fri; 12PM - 11:30PM Sat; 12PM - 11PM Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.6/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> gelato, waffle, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 585-3185
+        </p>
+  
+   <h2>Tous les Jours</h2>
+        <p>
+   French-Asian bakery chain offering macarons and other sweet and savory treats, plus breakfast.
+        </p>
+        <p>
+          <strong>Address:</strong> 152 Harvard Ave, Allston, MA 02134
+        </p>
+        <p>
+         <strong>Hours:</strong> 9AM - 10PM Sun-Thurs; 9AM - 11PM Fri-Sat
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, pie, cookie, bread
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 787-1069
+        </p>
+  
+   <h2>Caffè Paradiso</h2>
+        <p>
+  Locals head to this traditional Italian coffeehouse for espresso, gelato, pastries & socializing.
+        </p>
+        <p>
+          <strong>Address:</strong> 255 Hanover St, Boston, MA 02113
+        </p>
+        <p>
+         <strong>Hours:</strong> 7AM - 2AM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.3/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> gelato, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 742-1768
+        </p>
+  
+   <h2>Japonaise Bakery & Cafe</h2>
+        <p>
+ Cozy counter-serve space serving classic & creative baked goods that mix Eastern & Western flavors.
+        </p>
+        <p>
+          <strong>Address:</strong> 1020 Beacon St, Brookline, MA 02446
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 8PM Thurs-Sun; Closed Mon-Wed
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.7/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 566-7730
+        </p>
+  
+   <h2>Oasit’s Sweet Dessert Studio</h2>
+        <p>
+The newest Asian dessert shop located in Brookline. 
+        </p>
+        <p>
+          <strong>Address:</strong> 1428 Beacon St, Brookline, MA 02446
+        </p>
+        <p>
+         <strong>Hours:</strong> 1PM - 10PM Sat-Sun; 2PM - 10PM Mon, Wed - Fri; Closed Tues
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.7/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, shaved ice
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 879-2715
+        </p>
+  
+  <h2>Kyo Matcha</h2>
+        <p>
+Cafe in a global chain dishing up a variety of Japanese dessert specialties like matcha ice cream.
+        </p>
+        <p>
+          <strong>Address:</strong> 1010 Beacon St, Brookline, MA 02446
+        </p>
+        <p>
+         <strong>Hours:</strong> Closed Mon; 11:30AM - 10PM Tues-Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.3/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 505-6857
+        </p>
+  
+  <h2>North End Creamery</h2>
+        <p>
+Small-batch ice cream shop with homemade flavors, including cookies and cream, mint chip, and rum raisin.
+        </p>
+        <p>
+          <strong>Address:</strong> 121 Salem St, Boston, MA 02113
+        </p>
+        <p>
+         <strong>Hours:</strong> Closed Mon; 2PM - 9PM Sun, Tues-Thurs; Fri 6:30PM - 9PM; 2:30 - 9PM Sat
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.8/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> N/A
+        </p>
+  
+   <h2>Far Out Ice Cream</h2>
+        <p>
+Blended flavors of fruit and ice cream, made with a machine from New Zealand, are served at this swirly treat shop.
+        </p>
+        <p>
+          <strong>Address:</strong> 419 Harvard St, Brookline, MA 02446
+        </p>
+        <p>
+         <strong>Hours:</strong> 12PM - 10PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.5/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 487-8102
+        </p>
+  
+  <h2>Taiyaki NYC</h2>
+        <p>
+Ice cream shop known for fish-shaped cones made of Japanese waffles filled with custard, ice cream, or red bean paste.
+        </p>
+        <p>
+          <strong>Address:</strong> 119 Seaport Blvd Suite B, Boston, MA 02210
+        </p>
+        <p>
+         <strong>Hours:</strong> 12PM - 10PM Mon-Fri; 11AM - 10PM Sat-Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.3/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 531-3514
+        </p>
+  
+   <h2>Da Vinci Gelato & Waffle</h2>
+        <p>
+Cafe Restaurant in Boston that's a popular meeting place for those who want to enjoy delicious cafe desserts.
+        </p>
+        <p>
+          <strong>Address:</strong>  297 Huntington Ave, Boston, MA 02115
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 11PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 5.0/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> gelato, waffle, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 977-0011
+        </p>
+  
+  <h2>Emack & Bolio's Ice Cream</h2>
+        <p>
+Dessert chain serving creative ice cream flavors & frozen yogurt, plus other sweet treats.
+        </p>
+        <p>
+          <strong>Address:</strong> 290 Newbury St, Boston, MA 02115
+        </p>
+        <p>
+         <strong>Hours:</strong> 2PM - 10:30PM Mon-Fri; 1:30PM - 10:30PM Sat-Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.3/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 536-7127
+        </p>
+  
+  
+  <h2>The Scoop N Scootery</h2>
+        <p>
+Ice cream and frozen yogurt sundae shop with unique flavors and toppings, plus delivery.
+        </p>
+        <p>
+          <strong>Address:</strong> 75 Linden St, Allston, MA 02134
+        </p>
+        <p>
+         <strong>Hours:</strong> Closed Mon; 3PM - 12AM Tues-Thurs; 3PM - 1AM Fri; 12PM - 1AM Sat; 12PM - 10PM Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.2/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 208-8016
+        </p>
+  
+  <h2>FoMu</h2>
+        <p>
+Hip, eco-minded vendor of vegan baked goods & ice cream, all made with local ingredients.
+        </p>
+        <p>
+          <strong>Address:</strong> 655 Tremont St, Boston, MA 02118
+        </p>
+        <p>
+         <strong>Hours:</strong> 2PM - 10PM Mon-Thurs; 12PM - 11PM Fri-Sat; 12PM - 10PM Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 982-7955
+        </p>
+  
+  <h2>Slush King</h2>
+        <p>
+Ice cream shop specializing in soft-serve and homemade gelato plus Italian slush.
+        </p>
+        <p>
+          <strong>Address:</strong> 211 Bennington St, East Boston, MA 02128
+        </p>
+        <p>
+         <strong>Hours:</strong> 1AM - 2AM Sun; Closed Mon-Sat
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.9/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> ice cream, gelato
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 561-7050
+        </p>
+  
+   <h2>Athan's Bakery</h2>
+        <p>
+Popular bakery & European-style cafe specializing in elegant Mediterranean pastries & confectionery.
+        </p>
+        <p>
+          <strong>Address:</strong> 1621 Beacon St, Brookline, MA 02446
+        </p>
+        <p>
+         <strong>Hours:</strong> 7:30AM - 10PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 734-7028
+        </p>
+  
+  <h2>
+Top Shelf Cookies</h2>
+        <p>
+Cookie shop dishing up Boston Lager chocolate chip, lemon, and other flavors.
+        </p>
+        <p>
+          <strong>Address:</strong>  516 Gallivan Blvd, Boston, MA 02124
+        </p>
+        <p>
+         <strong>Hours:</strong> Closed Mon; 9AM - 6PM Tues-Sat; 11AM - 4PM Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.8/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (857) 321-0446
+        </p>
+  
+   <h2>
+     Crumbl</h2>
+        <p>
+Rotating menu of specialty cookies including milk chocolate chip, available for delivery.
+        </p>
+        <p>
+          <strong>Address:</strong>  127 Guest St, Boston, MA 02135
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 10PM Mon-Thurs; 8AM - 11PM Fri-Sat; Closed Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.7/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 798-4556
+        </p>
+  
+  <h2>
+     The Boston Chipyard, Inc.</h2>
+        <p>
+Faneuil Hall vendor baking chocolate chip cookies, both straight-up traditional & other varieties.
+        </p>
+        <p>
+          <strong>Address:</strong>  1 Faneuil Hall Market Place, Boston, MA 02109
+        </p>
+        <p>
+         <strong>Hours:</strong> 10AM - 9PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.3/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 742-9537
+        </p>
 
-          <h2>Bova's Bakery</h2>
-          <p>
-      A family-owned bakeshop, opened in 1932, offering up breads, cookies and sandwiches.
-          </p>
-          <p>
-            <strong>Address:</strong> 134 Salem St, Boston, MA 02113
-          </p>
-          <p>
-           <strong>Hours:</strong> Open 24 hours
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.7/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> cake, pie, cookie 
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 523-5601
-          </p>
-          
-          <h2>Modern Pastry Shop</h2>
-          <p>
-      Pastries, cakes, pies & cookies fill the cases at this unassuming, family-run Italian bakery.
-          </p>
-          <p>
-            <strong>Address:</strong> 257 Hanover St, Boston, MA 02113
-          </p>
-          <p>
-           <strong>Hours:</strong> 7AM - 11PM Mon-Thurs, Sun; 7AM - 12AM Fri-Sat
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.5/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> cake, pie, cookie 
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 523-3783
-          </p>
-          
-          <h2>Colette Bakery</h2>
-          <p>
-      Bakery turning out croissants, quiches, eclairs, and other French baked goods.
-          </p>
-          <p>
-            <strong>Address:</strong> 2517 Columbus Ave, Boston, MA 02118
-          </p>
-          <p>
-           <strong>Hours:</strong> Closed Mon-Tue; 7AM - 5PM Wed-Fri; 8AM - 4PM Sat-Sun
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.7/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> bread, cake, cookie 
-          </p>
-          <p>
-          <strong>Phone:</strong> (857) 449-6121
-          </p>
-          
-          <h2>Kane's Donuts</h2>
-          <p>
-      Modest bakery making 40+ kinds of donuts, such as crème brûlée & red velvet, with gf options.
-          </p>
-          <p>
-            <strong>Address:</strong> 90 Oliver St, Boston, MA 02110
-          </p>
-          <p>
-           <strong>Hours:</strong> 7AM - 2:30PM everyday 
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.6/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> donut
-          </p>
-          <p>
-          <strong>Phone:</strong> (857) 317-2654
-          </p>
-          
-          <h2>Levain Bakery</h2>
-          <p>
-      Bakery known for freshly baked chocolate chip cookies, including gluten-free versions.
-          </p>
-          <p>
-            <strong>Address:</strong> 180 Newbury St, Boston, MA 02116
-          </p>
-          <p>
-           <strong>Hours:</strong> 8AM - 10PM everyday 
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.4/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> cookie
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 390-7799
-          </p>
-          
-          <h2>Jonquils Cafe and Bakery</h2>
-          <p>
-      Playful patisserie in a stylish space offering specialty coffees & teas, plus cakes & snacks.
-          </p>
-          <p>
-            <strong>Address:</strong> 125 Newbury St, Boston, MA 02116
-          </p>
-          <p>
-           <strong>Hours:</strong> 9AM - 6PM everyday 
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.6/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> cake
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 982-6117
-          </p>
-          
-          <h2>Sweet Waffles + Boba</h2>
-          <p>
-      Laid-back cafe specializing in Belgian waffles on a stick & bubble tea drinks in creative flavors.
-          </p>
-          <p>
-            <strong>Address:</strong> 18 Hudson St, Boston, MA 02111
-          </p>
-          <p>
-           <strong>Hours:</strong> Closed Mon-Thurs; 12PM - 8PM Fri-Sun 
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.8/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> waffle
-          </p>
-          <p>
-          <strong>Phone:</strong> (857) 203-0480
-          </p>
-          
-          <h2>Amorino Gelato</h2>
-          <p>
-      Italian ice cream shop serving gelati and sorbet in the shape of flowers, plus macarons.
-          </p>
-          <p>
-            <strong>Address:</strong> 249 Newbury St, Boston, MA 02116
-          </p>
-          <p>
-           <strong>Hours:</strong> 1PM - 11PM Mon-Thurs; 1PM - 11:30PM Fri; 12PM - 11:30PM Sat; 12PM - 11PM Sun
-          </p>
-          <p>
-          <strong>Rating:</strong> 4.6/5 
-          </p>
-          <p>
-          <strong>Dessert type:</strong> gelato, waffle, cake, cookies
-          </p>
-          <p>
-          <strong>Phone:</strong> (617) 585-3185
-          </p>
+    <h2>
+    Hearth & Hug Bakery</h2>
+        <p>
+Made-from-scratch baked goods including bread, cakes, and specialty pastries.
+        </p>
+        <p>
+          <strong>Address:</strong>  100 Hanover St, Boston, MA 02108
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 6PM Wed-Sat; Closed Sun-Tues
+        </p>
+        <p>
+        <strong>Rating:</strong> 5.0/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake, cookie, pie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 209-9354
+        </p>
 
-  </body>
+  <h2>
+    Corner Cafe & Bakery</h2>
+        <p>
+Bakery with baked goods such as mooncakes, egg tarts, and lychee mousse cake.
+        </p>
+        <p>
+          <strong>Address:</strong>  62 Harrison Ave, Boston, MA 02111
+        </p>
+        <p>
+         <strong>Hours:</strong> 6:30AM - 9:30PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.5/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 338-1988
+        </p>
+  
+   <h2>
+    Oakleaf Cakes Bake Shop</h2>
+        <p>
+Bakery crafting creative custom cakes & offering decorating classes for all levels of experience.
+        </p>
+        <p>
+          <strong>Address:</strong>  12 Westland Ave, Boston, MA 02115
+        </p>
+        <p>
+         <strong>Hours:</strong> 7:30AM - 7PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> cake, cookie, bread
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 299-1504
+        </p>
+  
+   <h2>
+    Yi Soon Bakery</h2>
+        <p>
+Petite Chinese bakery doling out traditional sweet & savory buns, plus breads, cakes & cookies.
+        </p>
+        <p>
+          <strong>Address:</strong>  112 Brighton Ave, Allston, MA 02134
+        </p>
+        <p>
+         <strong>Hours:</strong> 9AM - 9:30PM Mon-Fri; 9AM - 10PM Sat-Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 254-3099
+        </p>
+  
+  <h2>
+    Bao Bao Bakery & Cafe</h2>
+        <p>
+Relaxed corner bakery & cafe serving an array of Chinese buns, sandwiches, egg tarts & pastries.
+        </p>
+        <p>
+          <strong>Address:</strong>  84 Harrison Ave, Boston, MA 02111
+        </p>
+        <p>
+         <strong>Hours:</strong> 8AM - 9PM Mon-Wed; 8AM - 10PM Thurs-Sun
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 988-8191
+        </p>
+  
+   <h2>
+    Lolly's Bakery</h2>
+        <p>
+Homemade breads, pastries, cookies & custom cakes star at this pint-sized Latin American bakeshop.
+        </p>
+        <p>
+          <strong>Address:</strong>  158 Bennington St, East Boston, MA 02128
+        </p>
+        <p>
+         <strong>Hours:</strong> 6:30AM - 8:30PM Mon-Fri; 6:30AM - 8PM Sat
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.4/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 988-8191
+        </p>
+  
+   <h2>
+    Sugar Baking Co.</h2>
+        <p>
+Busy bakeshop featuring a wide variety of cookies, cakes & pastries, plus pies & tarts.
+        </p>
+        <p>
+          <strong>Address:</strong>  1884 Centre St, Boston, MA 02132
+        </p>
+        <p>
+         <strong>Hours:</strong> 6:30AM - 8:30PM Mon-Fri; 6:30AM - 8PM Sat
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.5/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> pie, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 327-8427
+        </p>
+  
+  <h2>
+    When Pigs Fly Breads</h2>
+        <p>
+Cozy bakery spotlighting housemade breads, plus cookies, cakes, jams & olive oils.
+        </p>
+        <p>
+          <strong>Address:</strong>  1378 Beacon St, Brookline, MA 02446
+        </p>
+        <p>
+         <strong>Hours:</strong> 10AM - 6PM everyday
+        </p>
+        <p>
+        <strong>Rating:</strong> 4.7/5 
+        </p>
+        <p>
+        <strong>Dessert type:</strong> bread, cake, cookie
+        </p>
+        <p>
+        <strong>Phone:</strong> (617) 232-1077
+        </p>
+</body>
 </html>
